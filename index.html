@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                 <h2><b><u>Addition:</u></b></h2>
+
+<form onsubmit="dosum();return false">
+
+    num1:<input id="num1"type="number"><b></b>
+    num2:<input id="num2"type="number"><b></b>
+    <button type="submit">sum</button>
+ </form>
+ <h3 id="result"> </h3>
+ <script>
+    function dosum() {
+        let firstnumber=Number(document.querySelector("#num1").value) 
+        let secondnumber=Number(document.querySelector("#num2").value) 
+        
+        console.log(firstnumber, secondnumber)
+        let sum =firstnumber + secondnumber;
+
+        document.querySelector("#result").innerHTML =sum;
+    } 
+ </script>  
+ 
+               <h2><b><u>subtraction:</u></b></h2>
+
+
+<form onsubmit="dosub();return false"> 
+
+      num1:<input id="num3"type="number" required><b></b>
+      num2:<input id="num4"type="number" required><b></b>
+      <button type="submit">subt</button>
+ </form>
+
+ <h3 id="finalresult"> </h3>
+
+ <script>
+    function dosub() {
+        let firstnumber=Number(document.querySelector("#num3").value) 
+        let secondnumber=Number(document.querySelector("#num4").value) 
+        
+        console.log(firstnumber, secondnumber)
+        let subtract = firstnumber - secondnumber;
+
+        document.querySelector("#finalresult").innerHTML =subtract;
+    } 
+</script> 
+
+
+
+                  <h2><b><u>multiplication:</u></b></h2>
+
+<form onsubmit="domulti();return false">
+
+    number1:<input id="number1"type="number"><b></b>
+    number2:<input id="number2"type="number"><b></b>
+    <button type="submit">multi</button>
+ </form>
+ <h3 id="resultm"> </h3>
+ <script>
+    function domulti() {
+        let firstnumber=Number(document.querySelector("#number1").value) 
+        let secondnumber=Number(document.querySelector("#number2").value) 
+        
+        console.log(firstnumber, secondnumber)
+        let multiply =firstnumber * secondnumber;
+
+        document.querySelector("#resultm").innerHTML =multiply;
+    } 
+ </script>
+
+  
+                 <h2><b><u>devision:</u></b></h2>
+
+ <form onsubmit="dodevi();return false">
+ 
+     number1:<input id="number5"type="number"><b></b>
+     number2:<input id="number6"type="number"><b></b>
+     <button type="submit">dev</button>
+  </form>
+  <h3 id="resultd"> </h3>
+  <script>
+     function dodevi() {
+         let firstnumber=Number(document.querySelector("#number5").value) 
+         let secondnumber=Number(document.querySelector("#number6").value) 
+         
+         console.log(firstnumber, secondnumber)
+         let devision = firstnumber / secondnumber;
+ 
+         document.querySelector("#resultd").innerHTML =devision;
+     } 
+  </script>
+  
+</body>
+</html> 
